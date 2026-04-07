@@ -5,31 +5,6 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    groups:
-      angular:
-        patterns:
-          - "@angular*"
-        update-types:
-          - "minor"
-          - "patch"
-      ngrx:
-        patterns:
-          - "@ngrx*"
-          - "rxjs"
-        update-types:
-          - "minor"
-          - "patch"
-      typescript-eslint:
-        patterns:
-          - "typescript-eslint*"
-        update-types:
-          - "minor"
-          - "patch"
-
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
